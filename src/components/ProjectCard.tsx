@@ -1,4 +1,5 @@
 import { motion, MotionValue, useTransform } from 'framer-motion';
+import LiveProjectButton from './LiveProjectButton';
 
 interface ProjectData {
   number: string;
@@ -7,6 +8,7 @@ interface ProjectData {
   description: string;
   features: string[];
   techStack: string[];
+  liveUrl?: string;
 }
 
 interface ProjectCardProps {
@@ -41,7 +43,7 @@ export default function ProjectCard({ project, index, totalCards, progress }: Pr
         className="absolute w-full max-w-[1760px] rounded-[40px] sm:rounded-[50px] md:rounded-[60px] border-2 border-[#D7E2EA] p-6 sm:p-8 md:p-10 flex flex-col gap-6 sm:gap-8 md:gap-10 origin-top"
       >
         {/* Header */}
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 sm:gap-4">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 sm:gap-6">
           <div className="flex items-center gap-6 sm:gap-8 md:gap-10">
             <span
               className="text-[#D7E2EA] font-black uppercase leading-none"
@@ -64,6 +66,9 @@ export default function ProjectCard({ project, index, totalCards, progress }: Pr
               </span>
             </div>
           </div>
+          {project.liveUrl && (
+            <LiveProjectButton href={project.liveUrl} className="self-start sm:self-auto" />
+          )}
         </div>
 
         {/* Content */}
