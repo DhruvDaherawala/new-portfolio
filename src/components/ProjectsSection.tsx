@@ -15,6 +15,15 @@ const projects = [
   },
   {
     number: '02',
+    category: 'Customised Website',
+    name: 'Crochet E-commerce Website',
+    description: 'A fully customized e-commerce website for crochet products, featuring product listings, order management, and payment integration.',
+    features: ['Product Listings', 'Order Management', 'Payment Integration'],
+    techStack: ['React.js', 'Tailwind CSS', 'MongoDB'],
+    liveUrl: 'https://kaahnuri-by-nidhii.vercel.app/',
+  },
+  {
+    number: '03',
     category: 'MERN Stack / AI',
     name: 'Data Visualization with AI Chart Recommendation',
     description: 'Built a MERN-based data visualization platform capable of generating intelligent chart recommendations using pretrained AI models, with interactive dashboards and dynamic graph rendering.',
@@ -23,7 +32,7 @@ const projects = [
     liveUrl: 'https://data-viz-pro-frontend.vercel.app/',
   },
   {
-    number: '03',
+    number: '04',
     category: 'Full Stack',
     name: 'Property Rental Management System',
     description: 'Developed a complete rental management platform for property listings and tenant management with full CRUD operations, user management, and database integration.',
@@ -32,7 +41,7 @@ const projects = [
     liveUrl: 'https://new-updated-prms-frontend.vercel.app/',
   },
   {
-    number: '04',
+    number: '05',
     category: 'Machine Learning / Deep Learning',
     name: 'Loan Eligibility Prediction System',
     description: 'Using ML model to predict loan eligibility based on various factors.',
@@ -41,7 +50,7 @@ const projects = [
     liveUrl: 'https://loan-eligibility-prediction-system-zusk.onrender.com',
   },
   {
-    number: '05',
+    number: '06',
     category: 'Machine Learning',
     name: 'Diabetes Prediction System',
     description: 'Developed a machine learning application that predicts diabetes using Support Vector Machine with medical dataset analysis and model training.',
